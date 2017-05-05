@@ -9,7 +9,7 @@ def indetermineate_progressbar():
     start = i
     end = bar_length - i - 1
 ''
-    bar = "[" + " " * start + "-===-" + " " * end + "]\r"
+    bar = "[" + "." * start + " " * end + "]\r"
 
     sys.stdout.write(bar)
     sys.stdout.flush()
