@@ -1,6 +1,6 @@
 import sys
 
-def indetermineate_progressbar():
+def indetermineate_progressbar(status = ""):
     indetermineate_progressbar.current += 1;
     bar_length = 60;
 
@@ -9,7 +9,7 @@ def indetermineate_progressbar():
     start = i
     end = bar_length - i - 1
 ''
-    bar = "[" + "." * start + " " * end + "]\r"
+    bar = "[" + "." * start + " " * end + "]" + status  + "\r"
 
     sys.stdout.write(bar)
     sys.stdout.flush()
